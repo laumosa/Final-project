@@ -196,11 +196,17 @@ Gradient Boosting Classifier models are known for their ability to handle comple
 | :--------------------------- |:---------|:----------|:---------|:---------|
 | Gradient Boosting Classifier |  0.73    | 0.23      |  0.81    |  0.35    |
 
-Taking a look a the importance of features we observe that 
+Examining the significance of different features, it becomes apparent that Age is the most influential factor in prediction accuracy, followed by the self-evaluation of general health, difficulties in walking, history of stroke, individual's gender, and Body Mass Index.
 
 ![DB2_importance_features](https://github.com/laumosa/Final-project/assets/83134591/0c2e3491-b0f2-4bbc-9596-ecfb415f8916)
 
+## Conclusions
 
+It is widely recognized and supported by our descriptive analysis that the health levels pertaining to obesity, nutrition, and physical activity among US citizens are not improving over the years. Specifically, obesity rates are increasing, and it is worth mentioning that the number of individuals consuming less than one fruit/vegetable per day is also rising. This trend can contribute to the development of diseases caused by deficiencies in essential vitamins and minerals. Regarding physical activity, a higher percentage of people claim to engage in some form of physical activity compared to those who don't, but there is still significant room for improvement in these statistics.
+
+The model that perform the best metrics is the Gradient Boosting Classifier, although it is not accurate because its f1 level is low. In this sense it is necessary to implement some improvements to the model tho get more accurate metrics. 
+
+It is interesting to observe that age alone accounts for nearly half of the model's explanatory power. When combined with self-evaluation of general health and difficulties in walking, these features account for almost 70% of the model's effectiveness of prediction. Interestingly, overall health habits do not appear to be as influential in determining our predictions.
 
 
 
