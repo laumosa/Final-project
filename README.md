@@ -100,6 +100,36 @@ When analyzing the percentage of individuals engaged in physical activity compar
 
 ![DB1_physical_activity](https://github.com/laumosa/Final-project/assets/83134591/c4deec32-31e3-4133-aa42-6dce704b298f)
 
+## Descriptive analysis - DataBase 2
+
+```DataBase source```
+
+Key Indicators of Heart Disease - The dataset comes from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of US in all 50 states as well as the District of Columbia and three US territories.
+
+```DataBase characteristics```
+
+This Database includes 2020 annual survey data related to adult health status. It consists of 319.795 rows and 18 columns. The description of the columns used for the analysis is the following:
+
+| Feature            | Type           | Description |
+| :----------------- |:---------------|:------------|
+| HeartDisease       | Boolean        | Individuals that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) - (Yes/No) |
+| BMI                | Float          | Body Mass Index |
+| Smoking            | Boolean        | Individuals that smoked at least 100 cigarettes in their entire life - (Yes/No) |
+| AlcoholDrinking    | Boolean        | Adult men having more than 14 drinks per week and adult women having more than 7 drinks per week (Yes/No) |
+| Stroke             | Boolean        | Individuals that were told they had a stroke - (Yes/No) |
+| PhysicalHealth     | Float          | Number of days during the past 30 where individuals have had any physical illness or injury |
+| MentalHealth       | Float          | Number of days during the past 30 where individuals have felt their mental health was not good |
+| DiffWalking        | Boolean        | Individuals with serious difficulty walking or climbing stairs (Yes/No) |
+| Sex                | Boolean        | (Female/Male) |
+| AgeCategory        | String         | (18-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, 80 or older) |
+| Race               | String         | (White, Black, Asian, American Indian/Alaskan Native, Other, Hispanic) |
+| Diabetic           | Boolean        | Individuals that were told they had diabetes (Yes/No) |
+| PhysicalActivity   | Boolean        | Individuals who reported doing physical activity or exercise during the past 30 days other than their regular job (Yes/No) |
+| GenHealth          | String         | Individuals valoration of their health - (Excellent, Very good, Good, Fair or Poor) |
+| SleepTime          | Float          | Quantity of sleep hours do individuals get in a 24-hour period, on average |
+| Asthma             | Boolean        | Individuals that were told they had asthma - (Yes/No) |
+| KidneyDisease      | Boolean        | Individuals that were told they had kidney disease, not including kidney stones, bladder infection or incontinence - (Yes/No) |
+| SkinCancer         | Boolean        | Individuals that were told they had skin cancer - (Yes/No) |
 
 
 
