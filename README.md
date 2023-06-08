@@ -158,6 +158,12 @@ In the graph below, a strong correlation between the occurrence of heart disease
 
 ![DB2_sleep](https://github.com/laumosa/Final-project/assets/83134591/bc5b9d3f-27e9-4dc2-a35b-56cad9c962bc)
 
+```DataBase Description - categorical variables```
+
+The following plots show the proportion of individuals that have had some heart disease and those who not for each categorical variable in the database. it is necessary to emphatyse the categorical variables are filtered by boolean option ‘yes’ (eg. individuals that smoke, drink alcohol, suffer from skin cancer, etc.). We observe that those variables with a higher proportion of heart disease are
+
+![DB2_categorical_1](https://github.com/laumosa/Final-project/assets/83134591/d7b6c2e6-15ee-480b-869a-58a6240ac144) ![DB2_categorical_2](https://github.com/laumosa/Final-project/assets/83134591/7f7d22a0-5227-434e-9009-f73c96a01b70)
+
 
 
 
