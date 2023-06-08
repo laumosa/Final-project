@@ -164,6 +164,29 @@ The following plots show the proportion of individuals that have had some heart 
 
 ![DB2_categorical_1](https://github.com/laumosa/Final-project/assets/83134591/d7b6c2e6-15ee-480b-869a-58a6240ac144) ![DB2_categorical_2](https://github.com/laumosa/Final-project/assets/83134591/7f7d22a0-5227-434e-9009-f73c96a01b70)
 
+## Machine learning
+
+The goal is to develop and compare different classification models to predict the presence or absence of heart disease based on the given features. 
+
+Since the predicted feature is heavily imbalanced (see the plot below), the code incorporates undersampling to balance the training data. This technique helps prevent biased predictions that may favor the majority class.
+
+![DB2_heart_disease](https://github.com/laumosa/Final-project/assets/83134591/a1470c17-0151-41fe-bb6a-473297b7e96b)
+
+We have trained several popular classification models and evaluated their performance. The table below displays the metrics for each of the models.
+
+| Model                        | Accuracy | Precision | Recall   | F1 score | 
+| :--------------------------- |:---------|:----------|:---------|:---------|
+| Logistic Regression          |  0.70    | 0.19      |  0.75    |  0.31    |
+| Linear Discriminant Analysis |  0.73    | 0.21      |  0.76    |  0.33    |
+| K-Nearest Neighbors          |  0.66    | 0.16      |  0.69    |  0.26    |
+| Gaussian Naive Bayes         |  0.79    | 0.23      |  0.58    |  0.33    |
+| Decision Tree Classifier     |  0.67    | 0.16      |  0.65    |  0.26    |
+| Support Vector Classifier    |  0.73    | 0.15      |  0.45    |  0.23    |
+| Random Forest Classifier     |  0.72    | 0.20      |  0.77    |  0.32    |
+
+
+
+
 
 
 
