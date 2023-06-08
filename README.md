@@ -13,37 +13,37 @@ In the upcoming sections, we will discuss the methodology employed, the datasets
 ## Tools
 
 The programming language and data visualization tools used for the present analysis are the following: 
-Phyton: to explore and clean the data, as well as develop the machine learning model
-MySQL: to explore and summarize the data to gain a comprehensive understanding of the dataset and extract relevant information.
-Tableau: to visually represent the data.
+- <ins>Phyton</ins>: to explore and clean the data, as well as develop the machine learning model
+- <ins>MySQL</ins>: to explore and summarize the data to gain a comprehensive understanding of the dataset and extract relevant information.
+- <ins>Tableau</ins>: to visually represent the data.
 
 ## Methodology
 
-## Exploratory data analysis (EDA)
+<ins>Exploratory data analysis (EDA)</ins>
 
 Prior to creating any visualizations, we conducted an exploratory data analysis in Python, aiming to achieve the following objectives:
 Understand the dataset's structure, including how the data is organized and the information it encompasses. This involved examining the various variables present in the dataset and their respective types.
 Identify any missing, duplicated, or erroneous data. We carefully searched for incomplete or inaccurate information within the dataset.
 
-*MySQL Queries*
+<ins>MySQL Queries</ins>
 
 After cleaning the data, we proceeded to generate SQL queries for each database in order to explore the data and provide contextual insights.
 
-*Tableau visualization*
+<ins>Tableau visualization</ins>
 
 After conducting data exploration, our next step involved creating various types of plots to provide visual insights for the understanding of the data. These visualizations include line plots, bar plots, maps, and other informative graphics.
 
-*Machine learning*
+<ins>Machine learning</ins>
 
 Our objective is to predict the likelihood of individuals having a heart disease based on the remaining variables in Database 2. As 'HeartDisease' is a categorical variable, we have trained multiple classification models to evaluate the performance metrics of each one. This analysis will help us determine the best model to use for accurate predictions.
 
-Descriptive analysis - DataBase 1
+## Descriptive analysis - DataBase 1
 
-DataBase source
+<ins>DataBase source</ins>
 
 Nutrition, Physical Activity, and Obesity - The dataset comes from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of US
 
-DataBase characteristics
+<ins>DataBase characteristics</ins>
 
 This Database includes data on adult's diet, physical activity, and weight status. It consists of 88.629 rows, where each row represents a sample of individuals, and 33 columns. The description of the columns used for the analysis:
 Year: 2011-2021
