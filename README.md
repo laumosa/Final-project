@@ -21,37 +21,45 @@ The programming language and data visualization tools used for the present analy
 
 ## Methodology
 
-<ins>Exploratory data analysis (EDA)</ins>
+```Exploratory data analysis (EDA)```
 
 Prior to creating any visualizations, we conducted an exploratory data analysis in Python, aiming to achieve the following objectives:
 Understand the dataset's structure, including how the data is organized and the information it encompasses. This involved examining the various variables present in the dataset and their respective types.
 Identify any missing, duplicated, or erroneous data. We carefully searched for incomplete or inaccurate information within the dataset.
 
-<ins>MySQL Queries</ins>
+```MySQL Queries```
 
 After cleaning the data, we proceeded to generate SQL queries for each database in order to explore the data and provide contextual insights.
 
-<ins>Tableau visualization</ins>
+```Tableau visualization```
 
 After conducting data exploration, our next step involved creating various types of plots to provide visual insights for the understanding of the data. These visualizations include line plots, bar plots, maps, and other informative graphics.
 
-<ins>Machine learning</ins>
+```Machine learning```
 
 Our objective is to predict the likelihood of individuals having a heart disease based on the remaining variables in Database 2. As 'HeartDisease' is a categorical variable, we have trained multiple classification models to evaluate the performance metrics of each one. This analysis will help us determine the best model to use for accurate predictions.
 
 ## Descriptive analysis - DataBase 1
 
-<ins>DataBase source</ins>
+```DataBase source```
 
 Nutrition, Physical Activity, and Obesity - The dataset comes from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of US
 
-<ins>DataBase characteristics</ins>
+```DataBase characteristics```
 
 This Database includes data on adult's diet, physical activity, and weight status. It consists of 88.629 rows, where each row represents a sample of individuals, and 33 columns. The description of the columns used for the analysis:
-Year: 2011-2021
-Location: 50 US states as well as the District of Columbia and three US territories.
-Class: Nutrition, Physical Activity or Obesity
-Question ID and Question:
+| Feature       | Type           | Description |
+| :------------ |:---------------|:------------|
+| YearStart     | Integer        | 2011-2021 |
+| LocationDesc  | String         | 50 US states as well as the District of Columbia and three US territories |
+| Class         | String         | Nutrition, Physical Activity or Obesity |
+| Question ID   | String         | ***see table below*** |
+| Question      | String         | ***see table below*** |
+| Data_Value    | Float          |  Percentage of the sample of individuals that meets each question |
+
+
+
+
 ['Q043'] Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
 ['Q044'] Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week.
 ['Q045'] Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
@@ -60,5 +68,4 @@ Question ID and Question:
 ['Q037'] Percent of adults aged 18 years and older who have an overweight classification
 ['Q036'] Percent of adults aged 18 years and older who have obesity
 ['Q018'] Percent of adults who report consuming fruit less than one time daily
-['Q019'] Percent of adults who report consuming vegetables less than one time daily
-Data value: percentage of the sample of individuals that meets each question
+['Q019'] Percent of adults who report consuming vegetables less than one time daily |
