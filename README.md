@@ -208,7 +208,9 @@ The model that perform the best metrics is the Gradient Boosting Classifier, alt
 
 It is interesting to observe that age alone accounts for nearly half of the model's explanatory power. When combined with self-evaluation of general health and difficulties in walking, these features account for almost 70% of the model's effectiveness of prediction. Interestingly, overall health habits do not appear to be as influential in determining our predictions.
 
+-----------------------------------------------------------------
 
+Check out my Heart Disease Prediction App for predictions regarding heart health on the following link:
 
 
 
