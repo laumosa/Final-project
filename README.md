@@ -94,6 +94,11 @@ Looking at the trend, we can observe a slight increase in the percentage of indi
 
 ![DB1_evolution_nutition](https://github.com/laumosa/Final-project/assets/83134591/493b2fcc-cc24-4263-ae32-56016f16b759)
 
+```DataBase Description - Physical activity```
+
+When analyzing the percentage of individuals engaged in physical activity compared to those who are not, on average, a higher proportion of individuals participate in some form of physical activity. However, there is an exception for those individuals who engage in both muscle-strengthening and aerobic physical activities, as the percentage is relatively lower in this specific category.
+
+![DB1_physical_activity](https://github.com/laumosa/Final-project/assets/83134591/c4deec32-31e3-4133-aa42-6dce704b298f)
 
 
 
