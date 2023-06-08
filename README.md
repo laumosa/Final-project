@@ -1,4 +1,4 @@
-# Final-project 
+# Heart Disease Prediction 
 ![readme_image](https://github.com/laumosa/Final-project/assets/83134591/e72b7e4e-5d00-4f21-81b5-daa8a9252123)
 
 
@@ -131,7 +131,32 @@ This Database includes 2020 annual survey data related to adult health status. I
 | KidneyDisease      | Boolean        | Individuals that were told they had kidney disease, not including kidney stones, bladder infection or incontinence - (Yes/No) |
 | SkinCancer         | Boolean        | Individuals that were told they had skin cancer - (Yes/No) |
 
+```DataBase Description - continuous variables```
 
+<ins>BMI, sex, heart disease</ins>
+
+The plot below illustrates the distribution of body mass index (BMI) categorized by sex and the presence of heart disease. There is a distinct distribution of BMI between females and males, due to their different body morphologies.
+When examining men, 50% of individuals fall within a broader range compared to women, and the maximum and minimum values are more widely dispersed, indicating a greater diversity in male body morphologies. Both women and men exhibit outliers at the upper end of the BMI scale. Interestingly, it is observed that outliers tend to be more extreme among individuals without a history of heart disease compared to those who have experienced it. However, it is worth noting that the median BMI range for the general population is slightly higher than that of individuals without a history of heart disease.
+
+![DB2_BMI](https://github.com/laumosa/Final-project/assets/83134591/3c247101-8d33-4b02-bf7e-4c3355a6c844)
+
+<ins>Physical and mental health, grouped age, heart disease</ins>
+
+According to the source database, the questions regarding physical and mental health are defined as follows:
+Physical Health: number of days during the past 30 where individuals have had any physical illness or injury 
+Mental Health: number of days during the past 30 where individuals have felt their mental health was not good - Float
+
+The graph below illustrates the average trends observed in physical and mental health over the life of individuals. There is a clear pattern indicating a decline in physical health for older individuals, as they tend to report a higher number of physical illnesses or injuries. On the other hand, mental health demonstrates a significant improvement on average for older people.
+
+When considering the factor of heart disease, it becomes evident that individuals who reported having a heart disease experience poorer physical and mental health compared to those who do not have it. This difference is particularly pronounced among individuals between the ages of 35 and 64.
+
+![DB2_health](https://github.com/laumosa/Final-project/assets/83134591/3939da36-a531-4c49-b248-64f5cfd049f1)
+
+<ins>Sleep hours, grouped age</ins>
+
+In the graph below, a strong correlation between the occurrence of heart disease and sleep time is evident. Specifically, individuals who sleep fewer hours on average are more likely to experience heart disease. However, this correlation does not hold true for individuals between the ages of 18 and 24. Additionally, beyond the age of 75, the difference in sleep duration between individuals with and without heart disease becomes nearly imperceptible.
+
+![DB2_sleep](https://github.com/laumosa/Final-project/assets/83134591/bc5b9d3f-27e9-4dc2-a35b-56cad9c962bc)
 
 
 
