@@ -70,13 +70,21 @@ The table below contains the ID and corresponding questions asked in the survey.
 | Q018             | Percent of adults who report consuming fruit less than one time daily |
 | Q019             | Percent of adults who report consuming vegetables less than one time daily |
 
+```DataBase Description - Obesity```
 
+The data shows a trend of increasing obesity rates from 2011 to 2021. In 2011, the lowest sample had less than 1% of obese individuals, whereas in 2021, the lowest sample was over 6%.
 
+When examining the samples with the highest obesity rates, we notice that each year, there is at least one sample where the percentage of obese individuals falls between 55% and 60%. However, it is evident that the number of individuals within this range increases as the years progress.
 
+![DB1_evolution_obesity](https://github.com/laumosa/Final-project/assets/83134591/fdf734a6-d5de-451d-a6ce-e790be657411)
 
+The map below displays the percentage of obese population in each US state, revealing a distinct difference between the eastern and western sides of the country. The western side generally exhibits a lower obesity rate compared to the eastern side.
 
+![DB1_states_obesity](https://github.com/laumosa/Final-project/assets/83134591/84eeb6d5-08e7-4025-8de5-a7e4f7550674)
 
+The plot below displays the percentage of obese population in the top and bottom 5 states. West Virginia emerges as the state with the highest percentage of obese population, closely followed by Mississippi. In contrast, Colorado stands out as the state with the lowest percentage of obese population.
 
+![DB1_evolution_state_ranking](https://github.com/laumosa/Final-project/assets/83134591/c546caba-04f4-4430-9d78-a32aaa432391)
 
 
 
