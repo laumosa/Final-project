@@ -1,4 +1,6 @@
-# Final-project
+# Final-project 
+![readme_image](https://github.com/laumosa/Final-project/assets/83134591/e72b7e4e-5d00-4f21-81b5-daa8a9252123)
+
 
 ## Introduction:
 
