@@ -47,25 +47,45 @@ Nutrition, Physical Activity, and Obesity - The dataset comes from the CDC and i
 
 ```DataBase characteristics```
 
-This Database includes data on adult's diet, physical activity, and weight status. It consists of 88.629 rows, where each row represents a sample of individuals, and 33 columns. The description of the columns used for the analysis:
+This Database includes data on adult's diet, physical activity, and weight status. It consists of 88.629 rows, where each row represents a sample of individuals, and 33 columns. The description of the columns used for the analysis is shown in the following table:
 | Feature       | Type           | Description |
 | :------------ |:---------------|:------------|
 | YearStart     | Integer        | 2011-2021 |
 | LocationDesc  | String         | 50 US states as well as the District of Columbia and three US territories |
 | Class         | String         | Nutrition, Physical Activity or Obesity |
-| Question ID   | String         | ***see table below*** |
-| Question      | String         | ***see table below*** |
+| Question ID   | String         | ***see table below***** |
+| Question      | String         | ***see table below***** |
 | Data_Value    | Float          |  Percentage of the sample of individuals that meets each question |
 
+The table below contains the ID and corresponding questions asked in the survey.
+| QuestionID      | Question           |
+| :----------------|:---------------|
+| Q043             | Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination) |
+| Q044             | Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week |
+| Q045             | Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination) |
+| Q046             | Percent of adults who engage in muscle-strengthening activities on 2 or more days a week |
+| Q047             | Percent of adults who engage in no leisure-time physical activity |
+| Q037             | Percent of adults aged 18 years and older who have an overweight classification |
+| Q036             | Percent of adults aged 18 years and older who have obesity |
+| Q018             | Percent of adults who report consuming fruit less than one time daily |
+| Q019             | Percent of adults who report consuming vegetables less than one time daily |
 
 
 
-['Q043'] Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
-['Q044'] Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week.
-['Q045'] Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
-['Q046'] Percent of adults who engage in muscle-strengthening activities on 2 or more days a week
-['Q047'] Percent of adults who engage in no leisure-time physical activity
-['Q037'] Percent of adults aged 18 years and older who have an overweight classification
-['Q036'] Percent of adults aged 18 years and older who have obesity
-['Q018'] Percent of adults who report consuming fruit less than one time daily
-['Q019'] Percent of adults who report consuming vegetables less than one time daily |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
