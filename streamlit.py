@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import polars as pl
 import numpy as np
 import pickle
 import sklearn
@@ -16,15 +15,23 @@ def load_dataset() -> pd.DataFrame:
 
 data = load_dataset()
 
-st.set_page_config(page_title="Heart Disease")
+st.set_page_config(page_title="Heart Disease",
+        page_icon="images/streamlit_icon.png")
 
 st.title("Heart Disease Prediction")
-st.subheader("BLABLA")
+st.subheader("Welcome to the Heart Disease Predictor App!")
 
-    
-st.markdown("""
-    BLABLA. 
-    """)
+col1, col2 = st.columns([1, 3])
+
+with col1:
+        st.image("images/streamlit_icon.png")
+        submit = st.button("Predict")
+
+with col2:  
+        st.markdown("""In this app, we aim to predict the likelihood of an individual having heart disease based on various factors related to their health and lifestyle. The data used for this prediction comes from a reliable source - the Centers for Disease Control and Prevention (CDC) - specifically from the Behavioral Risk Factor Surveillance System (BRFSS). The BRFSS conducts annual telephone surveys across all 50 states, the District of Columbia, and three US territories to gather information on the health status of adults in the United States.
+The database used in this app includes the 2020 annual survey data related to adult health status.""")
+
+st.markdown("""_The app should not replace consulting a medical professional. If there are any doubts or concerns, it is crucial to seek advice from a qualified healthcare provider for a thorough evaluation and personalized care._""")
 
 st.sidebar.title("Feature Selection")
 
@@ -81,7 +88,6 @@ label=LabelEncoder()
 for col in cat_cols:
     df[col]=label.fit_transform(df[col])
 
-submit = st.button("Predict")
 
 if submit:
         with open(model_path, 'rb') as file:
