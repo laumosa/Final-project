@@ -184,6 +184,18 @@ We have trained several popular classification models and evaluated their perfor
 | Support Vector Classifier    |  0.73    | 0.15      |  0.45    |  0.23    |
 | Random Forest Classifier     |  0.72    | 0.20      |  0.77    |  0.32    |
 
+Although accuracy seems to be pretty high for each model, almost over 0.70, we are not going to stick to this metric since our data is highly imbalanced,  so this may lead to make a bad model appear to be much better than it is. going to the next metric we can observe that neither of the trained models are very precise, meaning that of everything that the algorithm predicted as positive, a low percentage of times it was true. while looking at the recall metric we observe that the models are highly likely to identify the truth, except for Support Vector Classifier. F1 combines both precision and recall, we observe that this metric is not very good for our analysis.
+
+Although the accuracy of each model appears to be relatively high, exceeding 0.70, we should not only rely on this metric due to the highly imbalanced nature of our data. This imbalance can result in a misleadingly positive evaluation of a model's performance. Moving on to other metrics, we find that none of the trained models demonstrate a high level of precision, meaning that a low percentage of the positive predictions made by the algorithm are actually true. On the other hand, when examining the recall metric, we observe that the models generally correctly identify true positives, with the exception of the Support Vector Classifier. Considering the F1 score, which combines precision and recall, we find that this metric does not generate satisfactory results for our analysis.
+
+Therefore we have used an open-source machine learning platform called H2O to identify the top 20 models that effectively predict the presence or absence of heart disease. We have found out that the model that predicts the best is the Gradient Boosting Classifier. 
+
+Gradient Boosting Classifier models are known for their ability to handle complex relationships and capture non-linear patterns in the data. They can effectively handle both numerical and categorical features. The model works by combining multiple "weak" prediction models, usually decision trees, to create a strong predictive model. It does this by training each new decision tree to correct the mistakes made by the previous trees in the sequence. The metrics for this model  are the following: 
+
+Taking a look a the importance of features we observe that 
+
+![DB2_importance_features](https://github.com/laumosa/Final-project/assets/83134591/0c2e3491-b0f2-4bbc-9596-ecfb415f8916)
+
 
 
 
