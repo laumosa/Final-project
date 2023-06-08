@@ -2,9 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-import sklearn
 from sklearn.preprocessing import LabelEncoder
-import joblib
 
 data_path = "data/data_clean/heart_disease_clean.csv"
 model_path = "model/modelo.pkl"
