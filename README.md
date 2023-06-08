@@ -24,8 +24,8 @@ The programming language and data visualization tools used for the present analy
 ```Exploratory data analysis (EDA)```
 
 Prior to creating any visualizations, we conducted an exploratory data analysis in Python, aiming to achieve the following objectives:
-Understand the dataset's structure, including how the data is organized and the information it encompasses. This involved examining the various variables present in the dataset and their respective types.
-Identify any missing, duplicated, or erroneous data. We carefully searched for incomplete or inaccurate information within the dataset.
+- Understand the dataset's structure, including how the data is organized and the information it encompasses. This involved examining the various variables present in the dataset and their respective types.
+- Identify any missing, duplicated, or erroneous data. We carefully searched for incomplete or inaccurate information within the dataset.
 
 ```MySQL Queries```
 
@@ -43,7 +43,7 @@ Our objective is to predict the likelihood of individuals having a heart disease
 
 ```DataBase source```
 
-Nutrition, Physical Activity, and Obesity - The dataset comes from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of US
+<ins>Nutrition, Physical Activity, and Obesity:</ins> The dataset comes from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of US
 
 ```DataBase characteristics```
 
@@ -57,7 +57,7 @@ This Database includes data on adult's diet, physical activity, and weight statu
 | Question      | String         | ***see table below***** |
 | Data_Value    | Float          |  Percentage of the sample of individuals that meets each question |
 
-The table below contains the ID and corresponding questions asked in the survey.
+The table below contains the question asked in the survey and its corresponding ID:
 | QuestionID      | Question           |
 | :----------------|:---------------|
 | Q043             | Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination) |
@@ -75,6 +75,8 @@ The table below contains the ID and corresponding questions asked in the survey.
 The data shows a trend of increasing obesity rates from 2011 to 2021. In 2011, the lowest sample had less than 1% of obese individuals, whereas in 2021, the lowest sample was over 6%.
 
 When examining the samples with the highest obesity rates, we notice that each year, there is at least one sample where the percentage of obese individuals falls between 55% and 60%. However, it is evident that the number of individuals within this range increases as the years progress.
+
+It is evident that although the samples with the highest obesity rates remain relatively consistent each year, the samples with the lowest percentage rates have undergone significant changes over time. As the years progress, there are fewer samples with a low obesity rate.
 
 ![DB1_evolution_obesity](https://github.com/laumosa/Final-project/assets/83134591/fdf734a6-d5de-451d-a6ce-e790be657411)
 
@@ -104,7 +106,7 @@ When analyzing the percentage of individuals engaged in physical activity compar
 
 ```DataBase source```
 
-Key Indicators of Heart Disease - The dataset comes from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of US in all 50 states as well as the District of Columbia and three US territories.
+<ins>Key Indicators of Heart Disease:</ins> The dataset comes from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of US in all 50 states as well as the District of Columbia and three US territories.
 
 ```DataBase characteristics```
 
