@@ -86,8 +86,13 @@ The plot below displays the percentage of obese population in the top and bottom
 
 ![DB1_evolution_state_ranking](https://github.com/laumosa/Final-project/assets/83134591/c546caba-04f4-4430-9d78-a32aaa432391)
 
+```DataBase Description - Nutrition```
 
+When examining the nutrition indicators, it becomes apparent that, on average, a greater proportion of individuals consume fruit less than once a day compared to those who consume vegetables less than once a day. Specifically, the percentage of fruit consumption is twice that of vegetable consumption.
 
+Looking at the trend, we can observe a slight increase in the percentage of individuals consuming fruit or vegetables less than once a day. However, from 2019 to 2021, the proportions remain almost the same.
+
+![DB1_evolution_nutition](https://github.com/laumosa/Final-project/assets/83134591/493b2fcc-cc24-4263-ae32-56016f16b759)
 
 
 
