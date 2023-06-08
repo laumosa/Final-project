@@ -114,11 +114,11 @@ This Database includes 2020 annual survey data related to adult health status. I
 
 | Feature            | Type           | Description |
 | :----------------- |:---------------|:------------|
-| HeartDisease       | Boolean        | Individuals that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) - (Yes/No) |
+| HeartDisease       | Boolean        | Individuals that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) (Yes/No) |
 | BMI                | Float          | Body Mass Index |
-| Smoking            | Boolean        | Individuals that smoked at least 100 cigarettes in their entire life - (Yes/No) |
+| Smoking            | Boolean        | Individuals that smoked at least 100 cigarettes in their entire life (Yes/No) |
 | AlcoholDrinking    | Boolean        | Adult men having more than 14 drinks per week and adult women having more than 7 drinks per week (Yes/No) |
-| Stroke             | Boolean        | Individuals that were told they had a stroke - (Yes/No) |
+| Stroke             | Boolean        | Individuals that were told they had a stroke (Yes/No) |
 | PhysicalHealth     | Float          | Number of days during the past 30 where individuals have had any physical illness or injury |
 | MentalHealth       | Float          | Number of days during the past 30 where individuals have felt their mental health was not good |
 | DiffWalking        | Boolean        | Individuals with serious difficulty walking or climbing stairs (Yes/No) |
@@ -127,11 +127,11 @@ This Database includes 2020 annual survey data related to adult health status. I
 | Race               | String         | (White, Black, Asian, American Indian/Alaskan Native, Other, Hispanic) |
 | Diabetic           | Boolean        | Individuals that were told they had diabetes (Yes/No) |
 | PhysicalActivity   | Boolean        | Individuals who reported doing physical activity or exercise during the past 30 days other than their regular job (Yes/No) |
-| GenHealth          | String         | Individuals valoration of their health - (Excellent, Very good, Good, Fair or Poor) |
+| GenHealth          | String         | Individuals valoration of their health (Excellent, Very good, Good, Fair or Poor) |
 | SleepTime          | Float          | Quantity of sleep hours do individuals get in a 24-hour period, on average |
-| Asthma             | Boolean        | Individuals that were told they had asthma - (Yes/No) |
-| KidneyDisease      | Boolean        | Individuals that were told they had kidney disease, not including kidney stones, bladder infection or incontinence - (Yes/No) |
-| SkinCancer         | Boolean        | Individuals that were told they had skin cancer - (Yes/No) |
+| Asthma             | Boolean        | Individuals that were told they had asthma (Yes/No) |
+| KidneyDisease      | Boolean        | Individuals that were told they had kidney disease, not including kidney stones, bladder infection or incontinence (Yes/No) |
+| SkinCancer         | Boolean        | Individuals that were told they had skin cancer (Yes/No) |
 
 ```DataBase Description - continuous variables```
 
@@ -145,8 +145,8 @@ When examining men, 50% of individuals fall within a broader range compared to w
 <ins>Physical and mental health, grouped age, heart disease</ins>
 
 According to the source database, the questions regarding physical and mental health are defined as follows:
-Physical Health: number of days during the past 30 where individuals have had any physical illness or injury 
-Mental Health: number of days during the past 30 where individuals have felt their mental health was not good - Float
+- Physical Health: number of days during the past 30 where individuals have had any physical illness or injury 
+- Mental Health: number of days during the past 30 where individuals have felt their mental health was not good
 
 The graph below illustrates the average trends observed in physical and mental health over the life of individuals. There is a clear pattern indicating a decline in physical health for older individuals, as they tend to report a higher number of physical illnesses or injuries. On the other hand, mental health demonstrates a significant improvement on average for older people.
 
@@ -162,7 +162,7 @@ In the graph below, a strong correlation between the occurrence of heart disease
 
 ```DataBase Description - categorical variables```
 
-The following plots show the proportion of individuals that have had some heart disease and those who not for each categorical variable in the database. it is necessary to emphatyse the categorical variables are filtered by boolean option ‘yes’ (eg. individuals that smoke, drink alcohol, suffer from skin cancer, etc.). We observe that those variables with a higher proportion of heart disease are
+The following plots show the proportion of individuals that have had some heart disease and those who not for each categorical variable in the database. it is necessary to emphatyse the categorical variables are filtered by boolean option ‘yes’ (eg. individuals that smoke, drink alcohol, suffer from skin cancer, etc.).
 
 ![DB2_categorical_1](https://github.com/laumosa/Final-project/assets/83134591/d7b6c2e6-15ee-480b-869a-58a6240ac144) ![DB2_categorical_2](https://github.com/laumosa/Final-project/assets/83134591/7f7d22a0-5227-434e-9009-f73c96a01b70)
 
@@ -186,13 +186,15 @@ We have trained several popular classification models and evaluated their perfor
 | Support Vector Classifier    |  0.73    | 0.15      |  0.45    |  0.23    |
 | Random Forest Classifier     |  0.72    | 0.20      |  0.77    |  0.32    |
 
-Although accuracy seems to be pretty high for each model, almost over 0.70, we are not going to stick to this metric since our data is highly imbalanced,  so this may lead to make a bad model appear to be much better than it is. going to the next metric we can observe that neither of the trained models are very precise, meaning that of everything that the algorithm predicted as positive, a low percentage of times it was true. while looking at the recall metric we observe that the models are highly likely to identify the truth, except for Support Vector Classifier. F1 combines both precision and recall, we observe that this metric is not very good for our analysis.
-
 Although the accuracy of each model appears to be relatively high, exceeding 0.70, we should not only rely on this metric due to the highly imbalanced nature of our data. This imbalance can result in a misleadingly positive evaluation of a model's performance. Moving on to other metrics, we find that none of the trained models demonstrate a high level of precision, meaning that a low percentage of the positive predictions made by the algorithm are actually true. On the other hand, when examining the recall metric, we observe that the models generally correctly identify true positives, with the exception of the Support Vector Classifier. Considering the F1 score, which combines precision and recall, we find that this metric does not generate satisfactory results for our analysis.
 
 Therefore we have used an open-source machine learning platform called H2O to identify the top 20 models that effectively predict the presence or absence of heart disease. We have found out that the model that predicts the best is the Gradient Boosting Classifier. 
 
 Gradient Boosting Classifier models are known for their ability to handle complex relationships and capture non-linear patterns in the data. They can effectively handle both numerical and categorical features. The model works by combining multiple "weak" prediction models, usually decision trees, to create a strong predictive model. It does this by training each new decision tree to correct the mistakes made by the previous trees in the sequence. The metrics for this model  are the following: 
+
+| Model                        | Accuracy | Precision | Recall   | F1 score | 
+| :--------------------------- |:---------|:----------|:---------|:---------|
+| Gradient Boosting Classifier |  0.73    | 0.23      |  0.81    |  0.35    |
 
 Taking a look a the importance of features we observe that 
 
